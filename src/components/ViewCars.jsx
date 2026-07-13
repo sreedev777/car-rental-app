@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
+import NavBar from './NavBar'
 
 
 const ViewCars = () => {
@@ -17,7 +18,9 @@ const ViewCars = () => {
         },[]
     )
   return (
+
     <div>
+        <NavBar/>
          <div className="container mt-5">
     <h2 className="heading text-center mb-4">
         All CAR DETAILS

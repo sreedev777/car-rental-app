@@ -7,19 +7,95 @@
     font-family:'Poppins',sans-serif;
 }
 
+html,
+body,
+#root{
+    margin:0;
+    padding:0;
+    min-height:100%;
+    width:100%;
+}
+
 body{
     background:rgb(0,0,0);
     color:rgb(225,220,201);
     min-height:100vh;
 }
 
-/* Container */
+/* ===========================
+   Navbar
+=========================== */
+
+.navbar{
+    background:rgb(31,21,12) !important;
+    border-bottom:1px solid rgba(225,220,201,.12);
+    padding:14px 25px;
+    box-shadow:0 8px 20px rgba(0,0,0,.45);
+}
+
+.navbar-brand{
+    color:rgb(225,220,201) !important;
+    font-size:1.5rem;
+    font-weight:700;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    transition:.3s ease;
+}
+
+.navbar-brand:hover{
+    color:white !important;
+}
+
+.navbar-nav{
+    margin-left:auto;
+    gap:10px;
+}
+
+.navbar-nav .nav-link{
+    color:rgb(225,220,201) !important;
+    font-weight:500;
+    padding:10px 18px;
+    border-radius:8px;
+    transition:.3s ease;
+}
+
+.navbar-nav .nav-link:hover{
+    background:rgb(65,45,21);
+    color:white !important;
+}
+
+.navbar-nav .nav-link.active{
+    background:rgb(65,45,21);
+    color:white !important;
+}
+
+.navbar-nav .nav-link.disabled{
+    color:rgba(225,220,201,.45) !important;
+}
+
+.navbar-toggler{
+    border:1px solid rgba(225,220,201,.4);
+}
+
+.navbar-toggler:focus{
+    box-shadow:none;
+}
+
+.navbar-toggler-icon{
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(225,220,201,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* ===========================
+   Container
+=========================== */
 
 .container{
     padding:50px 15px;
 }
 
-/* Heading */
+/* ===========================
+   Heading
+=========================== */
 
 .heading{
     text-align:center;
@@ -41,7 +117,9 @@ body{
     border-radius:50px;
 }
 
-/* Card */
+/* ===========================
+   Card
+=========================== */
 
 .course-card{
     background:rgb(31,21,12);
@@ -60,7 +138,9 @@ body{
         0 0 20px rgba(225,220,201,.12);
 }
 
-/* Header */
+/* ===========================
+   Card Header
+=========================== */
 
 .card-header{
     background:rgb(65,45,21);
@@ -74,7 +154,9 @@ body{
     font-weight:600;
 }
 
-/* Body */
+/* ===========================
+   Card Body
+=========================== */
 
 .card-body{
     background:rgb(31,21,12);
@@ -101,7 +183,9 @@ body{
     color:white;
 }
 
-/* Footer */
+/* ===========================
+   Card Footer
+=========================== */
 
 .card-footer{
     background:rgb(65,45,21);
@@ -110,13 +194,15 @@ body{
 }
 
 .card-footer small{
-    color:rgb(225,220,201)!important;
+    color:rgb(225,220,201) !important;
     font-size:14px;
     font-weight:600;
     letter-spacing:1px;
 }
 
-/* Scrollbar */
+/* ===========================
+   Scrollbar
+=========================== */
 
 ::-webkit-scrollbar{
     width:10px;
@@ -135,16 +221,35 @@ body{
     background:rgb(225,220,201);
 }
 
-/* Responsive */
+/* ===========================
+   Responsive
+=========================== */
 
-@media(max-width:768px){
+@media (max-width:768px){
 
-.heading{
-    font-size:2.2rem;
-}
+    .heading{
+        font-size:2.2rem;
+    }
 
-.course-card{
-    margin-bottom:20px;
-}
+    .course-card{
+        margin-bottom:20px;
+    }
+
+    .navbar{
+        padding:12px 15px;
+    }
+
+    .navbar-brand{
+        font-size:1.2rem;
+    }
+
+    .navbar-nav{
+        margin-top:15px;
+        gap:6px;
+    }
+
+    .navbar-nav .nav-link{
+        padding:12px;
+    }
 
 }
