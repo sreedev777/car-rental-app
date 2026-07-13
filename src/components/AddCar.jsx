@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
+import NavBar from "./NavBar";
 
 
 const AddVehicle = () => {
@@ -36,7 +37,7 @@ const AddVehicle = () => {
   return (
     <div>
     
-
+    <NavBar/>
       <h1 className="text-center mt-3">Vehicle Registration</h1>
 
       <div className="container">
