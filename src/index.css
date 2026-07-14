@@ -253,3 +253,129 @@ body{
     }
 
 }
+/* ===========================
+   Vehicle Registration Form
+=========================== */
+
+h1 {
+    color: rgb(225,220,201);
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.container {
+    max-width: 1000px;
+}
+
+/* Form Container */
+
+.vehicle-form,
+.form-wrapper {
+    background: rgb(31,21,12);
+    border: 1px solid rgba(225,220,201,.12);
+    border-radius: 20px;
+    padding: 35px;
+    box-shadow: 0 12px 35px rgba(0,0,0,.55);
+}
+
+/* Labels */
+
+.form-label {
+    color: rgb(225,220,201);
+    font-weight: 500;
+    margin-bottom: 8px;
+    letter-spacing: .5px;
+}
+
+/* Inputs */
+
+.form-control,
+.form-select {
+    background: rgb(18,12,8);
+    border: 1px solid rgba(225,220,201,.15);
+    color: rgb(225,220,201);
+    border-radius: 10px;
+    padding: 12px 15px;
+    transition: .3s;
+}
+
+.form-control::placeholder {
+    color: rgba(225,220,201,.5);
+}
+
+.form-control:focus,
+.form-select:focus {
+    background: rgb(18,12,8);
+    color: white;
+    border-color: rgb(225,220,201);
+    box-shadow: 0 0 12px rgba(225,220,201,.15);
+}
+
+.form-select option {
+    background: rgb(31,21,12);
+    color: rgb(225,220,201);
+}
+
+/* Number input arrows */
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button{
+    opacity:1;
+}
+
+/* Button */
+
+.btn-primary {
+    width: 100%;
+    padding: 14px;
+    background: rgb(65,45,21);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: .3s;
+}
+
+.btn-primary:hover {
+    background: rgb(225,220,201);
+    color: rgb(31,21,12);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(225,220,201,.18);
+}
+
+.btn-primary:focus {
+    box-shadow: none;
+}
+
+/* Spacing */
+
+.row.g-3 {
+    row-gap: 20px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .container{
+        padding:30px 15px;
+    }
+
+    h1{
+        font-size:2rem;
+        margin-bottom:25px;
+    }
+
+    .vehicle-form,
+    .form-wrapper{
+        padding:25px;
+    }
+
+    .btn-primary{
+        padding:13px;
+    }
+
+}

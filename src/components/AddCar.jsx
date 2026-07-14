@@ -43,6 +43,7 @@ const AddVehicle = () => {
       <div className="container">
         <div className="row">
           <div className="col-12">
+            <div className="vehicle-form">
             <div className="row g-3">
 
               {/* Registration Number */}
@@ -198,6 +199,7 @@ const AddVehicle = () => {
 
             </div>
           </div>
+        </div>
         </div>
       </div>
     </div>
