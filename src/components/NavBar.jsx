@@ -5,7 +5,7 @@ const NavBar = () => {
         <div>
             <nav className="navbar navbar-expand-lg custom-navbar">
                 <div className="container-fluid">
-                    <a className="navbar-brand" href="#">FLIGHT MANAGEMENT</a>
+                    <a className="navbar-brand" href="#">CAR RENTAL APP</a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -15,7 +15,6 @@ const NavBar = () => {
                             <a className="nav-link" href="/add">Add Car</a>
                             <a className="nav-link" href="/view">View Cars</a>
                             
-                            <a className="nav-link disabled" aria-disabled="true">Disabled</a>
                         </div>
                     </div>
                 </div>
